@@ -1,0 +1,17 @@
+{
+  "name": "Dolar Hoje",
+  "description": "Veja a cotação do Dólar através do DolarHoje.com",
+  "version": "0.1",
+
+  "background_page": "app.html",
+
+  "browser_action": {
+      "default_icon": "logo.png",   
+      "default_title": "Dolar Hoje"
+  },
+  
+  "icons": { "128": "logo.png" },
+  
+  "permissions": ["http://DolarHoje.com/"]
+  
+}
