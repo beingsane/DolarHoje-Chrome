@@ -1,7 +1,7 @@
 {
   "name": "Dolar Hoje",
   "description": "Veja a cotação do Dólar através do DolarHoje.com",
-  "version": "0.2",
+  "version": "0.3",
 
   "background_page": "app.html",
 
