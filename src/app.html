@@ -22,7 +22,7 @@
                 
                     xhr.open("GET", this.url, true);
                     xhr.onreadystatechange = function() {
-                      if (xhr.readyState == 4) {
+                      if ((xhr.readyState == 4) && (xhr.status == 200)) {
                           var actualQuote = xhr.responseText;
                           scope.onloadQuote(actualQuote);
                       }
