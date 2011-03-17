@@ -5,7 +5,6 @@
 
                 url: "http://dolarhoje.com/cotacao.txt",
                 reloadInterval: 600000, // 10 mins in ms
-                lastQuote: undefined,
 
                 badgeBackgroundColor: [178, 183, 32, 255], // yellow
                 clearBadgeTextTimeout: 10000, // 10 secs in ms
@@ -32,15 +31,9 @@
                 },
             
                 onloadQuote: function(actualQuote){
-                    if (actualQuote != this.lastQuote) {
-                        var tooltipText = "US$ 1,00 vale R$ " + actualQuote + " hoje";
-                        this.changeTooltipText(tooltipText);
-                
-                        this.changeBadgeText(actualQuote);
-                        window.setTimeout(this.changeBadgeText, this.clearBadgeTextTimeout, "");
-                
-                        this.lastQuote = actualQuote;
-                    }
+                    var tooltipText = "US$ 1,00 vale R$ " + actualQuote + " hoje";
+                    this.changeTooltipText(tooltipText);
+                    this.changeBadgeText(actualQuote);
                 },
             
                 attachBehaviors: function(){
