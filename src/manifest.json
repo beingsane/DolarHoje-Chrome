@@ -1,9 +1,12 @@
 {
+  "update_url":"http://clients2.google.com/service/update2/crx",
+  "manifest_version": 2,
+
   "name": "Dolar Hoje",
   "description": "Veja a cotação do Dólar através do DolarHoje.com",
-  "version": "0.33",
+  "version": "0.34",
 
-  "background_page": "app.html",
+  "background": {"page": "app.html"},
 
   "browser_action": {
       "default_icon": "logo.png",   
@@ -11,6 +14,8 @@
   },
 
   "icons": { "128": "logo.png" },
+
+  "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
 
   "permissions": ["http://DolarHoje.com/"],
 
