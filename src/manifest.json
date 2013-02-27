@@ -4,7 +4,7 @@
 
   "name": "Dolar Hoje",
   "description": "Veja a cotação do Dólar através do DolarHoje.com",
-  "version": "0.34",
+  "version": "0.35",
 
   "background": {"page": "app.html"},
 
@@ -17,7 +17,7 @@
 
   "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
 
-  "permissions": ["http://DolarHoje.com/"],
+  "permissions": ["http://DolarHoje.com/", "http://api.DolarHoje.com/"],
 
   "content_scripts": [
       {

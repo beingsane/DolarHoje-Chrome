@@ -1,6 +1,6 @@
 DolarHoje = {
 
-    url: "http://dolarhoje.com/cotacao.txt",
+    url: "http://api.dolarhoje.com/cotacao",
     reloadInterval: 600000, // 10 mins in ms
 
     badgeBackgroundColor: [178, 183, 32, 255], // yellow
