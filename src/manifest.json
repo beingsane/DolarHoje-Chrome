@@ -4,11 +4,12 @@
 
   "name": "Dolar Hoje",
   "description": "Veja a cotação do Dólar através do DolarHoje.com",
-  "version": "0.36",
+  "version": "0.37",
 
   "background": {"page": "app.html"},
 
   "browser_action": {
+      "default_icon": "logo.png",
       "default_title": "Dolar Hoje"
   },
 
